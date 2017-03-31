@@ -1,0 +1,141 @@
+body {
+	margin: 0;
+	padding:  0;
+	background: url('background.gif');
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+canvas {
+	box-shadow: 0px 0px 30px rgba(0,0,0,0.3);
+	float: left;
+	background: #fff;
+	border-radius: 6px;
+	display: block;
+}
+
+#drawingcontainer div {
+	font-family: 'Bree Serif', serif;
+	font-size: 30px;
+	padding: 15px;
+	line-height: 30px;
+}
+
+#options {
+	float: left;
+}
+
+
+#drawingcontainer span {
+	float: left;
+	text-transform: uppercase;
+	padding: 0 20px 20px 20px; 
+	font-size: 14px;
+	font-weight: bold;
+}
+
+#drawingcontainer input {
+	float: left;
+	display: inline;
+}
+
+#drawingcontainer input[type=range] {
+	position: relative;
+	top: 6px;
+}
+
+#options input[type=submit] {
+	border: 0;
+	border-radius: 4px;
+	margin-right: 10px;
+	width: 35px;
+	box-shadow: inset 0px 0px 10px rgba(0,0,0,0.2);
+	height: 35px;
+	position: relative;
+	cursor: pointer;
+}
+
+#options input[type=submit]:hover {
+	box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5);
+}
+
+#options input[type=submit]:active {
+	top: 2px;
+}
+
+.purple { background: #871de0; }
+.pink { background: #eb159d; }
+.red { background: #c92626; }
+.orange { background: #db551b; }
+.yellow { background: #ddc41e; }
+.green { background: #76b80f; }
+.blue { background: #1974b4; }
+.black { background: #000; }
+.white { background: #fff; }
+
+
+#drawingcontainer, #keyboardcontainer {
+	width: 710px;
+	margin: 0px auto;
+}
+
+#drawingcontainer .text {
+	text-align: center;
+	float: left;
+	width: 100%;
+	font-size: 50px;
+	padding: 40px 0;
+}
+
+#keyboardcontainer div {
+	text-align: center;
+	font-size: 24px;
+	font-family: 'Bree Serif', serif;
+	padding: 20px 0;
+}
+
+#keyboardcontainer span {
+	font-weight: bold;
+}
+
+#drawingcontainer canvas {
+	margin: 0 0 50px 0;
+}
+/* ------- IGNORE */
+
+#header {
+	width: 100%;
+	margin: 0px auto;
+}
+
+#header #center {
+	text-align: center;
+}
+
+#header h1 span {
+	color: #000;
+	display: block;
+	font-size: 50px;
+}
+
+#header p {
+	font-family: 'Georgia', serif;
+}
+#header h1 {
+	color: #892dbf;
+	font: bold 40px 'Bree Serif', serif;
+}
+
+#travel {
+	padding: 10px;
+	background: rgba(0,0,0,0.6);
+	border-bottom: 2px solid rgba(0,0,0,0.2);
+	font-variant: normal;
+	text-decoration: none;
+}
+
+#travel a {
+	font-family: 'Georgia', serif;
+	text-decoration: none;
+	border-bottom: 1px solid #f9f9f9;
+	color: #f9f9f9;
+}

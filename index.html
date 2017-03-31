@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<link href='http://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Droid+Sans:regular,bold' rel='stylesheet' type='text/css'>
+
+<link rel="stylesheet" type="text/css" href="style.css" />
+
+<title>AD PLUS - GRAPHIC SCREEN</title>
+
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="javascript.js"></script>
+
+<script type="text/javascript">
+// Disable scrolling with arrow keys!
+var ar=new Array(33,34,35,36,37,38,39,40);
+
+$(document).keydown(function(e) {
+     var key = e.which;
+      //console.log(key);
+      //if(key==35 || key == 36 || key == 37 || key == 39)
+      if($.inArray(key,ar) > -1) {
+          e.preventDefault();
+          return false;
+      }
+      return true;
+});
+</script>
+
+</head>
+<body onload="initMouse(); initKeyboard();">
+<div id="travel">
+	<a class="sub-head" href="https://p4cm4n972.github.io/casse-briques/">&laquo; CASSE BRICK</a>
+</div>
+
+
+
+<div id="drawingcontainer">
+	
+	<div id="options">
+		<input type="submit" value="1px" onclick="changeSize(1);" />
+		<input type="submit" value="2px" onclick="changeSize(2);" />
+		<input type="submit" value="3px" onclick="changeSize(3);" />
+		<input type="submit" value="5px" onclick="changeSize(5);" />
+		<input type="submit" value="10px" onclick="changeSize(10);" />
+		<input type="submit" value="15px" onclick="changeSize(20);" />
+		
+		<input type="submit" onclick="changeColor('#871de0');" class="purple" value="" />
+		<input type="submit" onclick="changeColor('#eb159d');" class="pink" value="" />
+		<input type="submit" onclick="changeColor('#c92626');" class="red" value="" />
+		<input type="submit" onclick="changeColor('#db551b');" class="orange" value="" />
+		<input type="submit" onclick="changeColor('#ddc41e');" class="yellow" value="" />
+		<input type="submit" onclick="changeColor('#76b80f');" class="green" value="" />
+		<input type="submit" onclick="changeColor('#1974b4');" class="blue" value="" />
+		<input type="submit" onclick="changeColor('#000');" class="black" value="" />
+		<input type="submit" onclick="changeColor('#FFF');" class="white" value="" />
+	</div>
+	
+	<canvas width="690" height="500" id="drawing">
+	Your browser doesn't support canvas
+	</canvas>
+</div>
+</body>
+</html>
